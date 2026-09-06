@@ -1,0 +1,1456 @@
+You are a senior full-stack engineer, product architect, UI/UX designer and startup product designer.
+
+I want you to build a complete, functional, modern MVP for a service marketplace platform called:
+
+KAAMSETU
+
+TAGLINE:
+
+"Skilled hands. Trusted service. Right at your doorstep."
+
+Hindi-friendly alternative:
+
+"Kaam dhoondhna bhi aasaan, kaam karwana bhi."
+
+==================================================
+1. CORE PRODUCT IDEA
+==================================================
+
+KaamSetu is a platform that connects customers with local skilled workers.
+
+The platform will allow customers to post a job request for work such as:
+
+- Electrician
+- Carpenter
+- Plumber
+- Painter
+- General Labour
+- AC Technician
+- Appliance Repair
+- RO Technician
+- Mason
+- Cleaning
+- Furniture Assembly
+- Gardening
+- Other local services
+
+The most important feature of KaamSetu is:
+
+CUSTOMER DOES NOT SIMPLY BOOK A RANDOM WORKER.
+
+Instead:
+
+CUSTOMER CREATES A JOB REQUEST
+        ↓
+CUSTOMER UPLOADS PHOTOS
+        ↓
+CUSTOMER DESCRIBES THE WORK
+        ↓
+CUSTOMER SELECTS DATE + TIME
+        ↓
+SUITABLE NEARBY WORKERS RECEIVE THE REQUEST
+        ↓
+WORKERS REVIEW PHOTOS + DESCRIPTION
+        ↓
+WORKER ACCEPTS OR REJECTS
+        ↓
+BOOKING IS CONFIRMED
+        ↓
+WORKER STARTS JOURNEY
+        ↓
+CUSTOMER CAN TRACK WORKER
+        ↓
+WORKER ARRIVES
+        ↓
+WORK STARTS
+        ↓
+WORK COMPLETED
+        ↓
+CUSTOMER RATES WORKER
+
+
+This worker-first job evaluation system is the core differentiating feature of the platform.
+
+==================================================
+2. BRAND IDENTITY
+==================================================
+
+Brand:
+
+KaamSetu
+
+The visual identity should feel:
+
+- Modern
+- Trustworthy
+- Professional
+- Local
+- Human
+- Technology-driven
+- Clean
+- Premium but accessible
+
+The website should NOT look like a generic college project.
+
+It should look like a real Indian startup product.
+
+Think:
+
+Modern service marketplace
++
+On-demand service platform
++
+Professional SaaS UI
++
+Indian local-service ecosystem
+
+Do NOT copy Urban Company, Uber, Swiggy, Zomato or any other company's design.
+
+Take inspiration only from modern UX patterns.
+
+==================================================
+3. EXACT COLOR SYSTEM
+==================================================
+
+Use the following color palette EXACTLY as the primary brand system.
+
+These colors are provided as the official KaamSetu brand palette:
+
+PRIMARY DARK:
+
+#004D40
+
+PRIMARY TEAL:
+
+#00796B
+
+MAIN TEAL:
+
+#009688
+
+LIGHT TEAL:
+
+#4DB6AC
+
+PALE TEAL:
+
+#B2DFDB
+
+Use these colors intelligently.
+
+Suggested usage:
+
+#004D40
+- Navbar
+- Footer
+- Dark backgrounds
+- Important headings
+- Primary brand areas
+
+#00796B
+- Primary buttons
+- Main CTA
+- Active navigation
+- Important UI elements
+
+#009688
+- Secondary buttons
+- Icons
+- Highlights
+- Interactive elements
+- Status indicators
+
+#4DB6AC
+- Secondary backgrounds
+- Cards
+- Borders
+- Hover states
+- Decorative elements
+
+#B2DFDB
+- Light backgrounds
+- Soft cards
+- Category backgrounds
+- Input highlights
+- Subtle sections
+
+Use white and neutral colors where necessary for readability.
+
+DO NOT introduce random colors.
+
+Use red only for errors/danger states and yellow/orange only for warnings if absolutely necessary.
+
+The teal palette should remain the dominant visual identity.
+
+==================================================
+4. TYPOGRAPHY
+==================================================
+
+PRIMARY BRAND FONT:
+
+QUROVA BOLD
+
+Use Qurova Bold prominently for:
+
+- KaamSetu logo/wordmark
+- Hero heading
+- Major section headings
+- Important marketing statements
+- Large numbers
+- Major CTA headings
+
+For normal body text, labels and UI elements, use a highly readable complementary sans-serif font such as:
+
+Inter
+
+Typography hierarchy should be:
+
+QUROVA BOLD
+→ Hero headings
+→ Section headings
+→ Brand identity
+
+INTER
+→ Body text
+→ Forms
+→ Navigation
+→ Buttons
+→ Dashboard
+→ Tables
+→ Small UI elements
+
+If Qurova Bold is not installed or available in the development environment, create a clear font variable so that I can add the actual Qurova font file later.
+
+Do NOT silently replace the branding font with a random decorative font.
+
+==================================================
+5. LOGO / BRANDING
+==================================================
+
+Create a clean text-based KaamSetu logo concept.
+
+The word:
+
+KAAMSETU
+
+should use Qurova Bold.
+
+Create a simple symbol/icon representing:
+
+Connection + skilled hands + bridge + local services.
+
+The logo should work in:
+
+- Navbar
+- Mobile navbar
+- Login page
+- Worker dashboard
+- Customer dashboard
+- Admin dashboard
+- Favicon
+
+Keep the logo minimal and professional.
+
+Do not make it overly complicated.
+
+==================================================
+6. USER TYPES
+==================================================
+
+There are THREE main user roles.
+
+1. CUSTOMER
+2. WORKER
+3. ADMIN
+
+Each role must have separate permissions.
+
+Implement role-based authentication and authorization.
+
+==================================================
+7. CUSTOMER FEATURES
+==================================================
+
+Customer registration:
+
+- Full name
+- Email
+- Phone number
+- Password
+- Profile photo optional
+
+Customer login:
+
+- Email/phone
+- Password
+- Forgot password
+- Remember session
+- Logout
+
+Customer can:
+
+- Browse categories
+- Search services
+- View workers
+- Filter workers
+- View worker profiles
+- Create job requests
+- Upload multiple images
+- Describe work
+- Add address
+- Select date
+- Select time slot
+- View request status
+- View accepted worker
+- Track worker
+- View booking history
+- Cancel eligible bookings
+- Receive notifications
+- Rate workers
+- Write reviews
+- Manage profile
+- Manage saved addresses
+
+==================================================
+8. WORKER FEATURES
+==================================================
+
+Worker registration MUST be separate from customer registration.
+
+Worker signup:
+
+- Full name
+- Phone
+- Email
+- Password
+- Profile picture
+- Profession
+- Skills
+- Experience
+- Service area
+- Address
+- Languages
+- About
+- Portfolio/work images
+- Availability
+- Working hours
+
+Worker dashboard:
+
+- Dashboard overview
+- New job requests
+- Active jobs
+- Upcoming jobs
+- Completed jobs
+- Earnings
+- Ratings
+- Availability
+- Profile
+- Portfolio
+- Notifications
+- Location sharing
+
+IMPORTANT:
+
+Workers should be able to inspect a customer's job BEFORE accepting it.
+
+==================================================
+9. JOB REQUEST SYSTEM
+==================================================
+
+This is the heart of KaamSetu.
+
+Customer creates:
+
+JOB REQUEST
+
+Fields:
+
+- Category
+- Service/subcategory
+- Job title
+- Detailed description
+- Images
+- Address
+- Location coordinates
+- Preferred date
+- Preferred time slot
+- Additional notes
+
+Example:
+
+CATEGORY:
+Electrician
+
+SERVICE:
+Ceiling Fan Repair
+
+DESCRIPTION:
+"My ceiling fan suddenly stopped working. The switch is working but the fan does not rotate."
+
+IMAGES:
+3 uploaded images
+
+DATE:
+10 September
+
+TIME:
+4:00 PM - 5:00 PM
+
+LOCATION:
+Customer's selected address
+
+After submitting:
+
+The system identifies suitable workers based on:
+
+- Category
+- Skills
+- Service area
+- Availability
+- Distance
+
+Suitable workers receive the job request.
+
+==================================================
+10. WORKER JOB REQUEST SCREEN
+==================================================
+
+Worker should see a professional job request card.
+
+Example:
+
+NEW JOB REQUEST
+
+Ceiling Fan Repair
+
+Customer description:
+"My ceiling fan suddenly stopped working..."
+
+Photos:
+[IMAGE] [IMAGE] [IMAGE]
+
+Distance:
+2.4 km
+
+Preferred date:
+10 September
+
+Time:
+4:00 PM - 5:00 PM
+
+Estimated difficulty:
+Medium
+
+Buttons:
+
+[ ACCEPT JOB ]
+
+[ REJECT ]
+
+Worker must be able to make an informed decision.
+
+==================================================
+11. BOOKING STATUS SYSTEM
+==================================================
+
+Create a proper booking state machine.
+
+Statuses:
+
+REQUESTED
+WORKER_VIEWED
+ACCEPTED
+REJECTED
+CONFIRMED
+ON_THE_WAY
+ARRIVED
+WORK_STARTED
+WORK_COMPLETED
+CANCELLED_BY_USER
+CANCELLED_BY_WORKER
+DISPUTED
+RATED
+
+Do not implement booking status as random strings throughout the application.
+
+Use a centralized status system.
+
+The UI should display appropriate visual states.
+
+==================================================
+12. TIME SLOT SYSTEM
+==================================================
+
+Customers should NOT type arbitrary appointment times.
+
+Create selectable time slots.
+
+Example:
+
+09:00 AM - 10:00 AM
+10:00 AM - 11:00 AM
+11:00 AM - 12:00 PM
+12:00 PM - 01:00 PM
+02:00 PM - 03:00 PM
+03:00 PM - 04:00 PM
+04:00 PM - 05:00 PM
+05:00 PM - 06:00 PM
+
+Workers should define:
+
+- Working days
+- Working hours
+- Breaks
+- Availability
+
+Only available workers should receive suitable requests.
+
+==================================================
+13. WORKER LOCATION TRACKING
+==================================================
+
+Implement location tracking carefully.
+
+DO NOT continuously track workers.
+
+Location sharing should only activate for an accepted/active job.
+
+Worker clicks:
+
+"START JOURNEY"
+
+Then location sharing begins.
+
+Customer sees:
+
+Worker name
+Worker profile photo
+Current/last known location
+Approximate distance
+Last updated time
+Journey status
+
+Example:
+
+"Rajesh is 1.4 km away"
+
+"Location updated 18 seconds ago"
+
+Worker can stop location sharing when:
+
+- Worker arrives
+- Job is cancelled
+- Job ends
+
+Use browser/device Geolocation APIs.
+
+Use WebSockets or Supabase Realtime for real-time updates.
+
+If real GPS cannot be tested without external API configuration, create a mock location mode for development.
+
+NEVER expose private API keys.
+
+==================================================
+14. RATING SYSTEM
+==================================================
+
+After WORK_COMPLETED:
+
+Customer can provide:
+
+1–5 star rating
+
++
+Written review
+
+Worker profile should display:
+
+Average rating
+Total reviews
+Completed jobs
+
+Example:
+
+4.8 ★
+126 reviews
+312 jobs completed
+
+Rules:
+
+- Only customers with completed bookings can review.
+- One review per booking.
+- Users cannot review cancelled bookings.
+- Workers cannot manipulate their own reviews.
+
+==================================================
+15. WORKER PROFILE
+==================================================
+
+Worker profile should look premium.
+
+Example:
+
+Rajesh Kumar
+
+Electrician
+
+4.8 ★
+
+126 jobs completed
+
+8 years experience
+
+Skills:
+
+Fan Installation
+Wiring
+Switch Repair
+Lighting
+MCB
+
+Service area:
+
+Lucknow
+
+Availability:
+
+Available Today
+
+Portfolio:
+
+[IMAGE]
+[IMAGE]
+[IMAGE]
+[IMAGE]
+
+Reviews:
+
+★★★★★
+
+"Very professional and arrived on time."
+
+CTA:
+
+REQUEST SERVICE
+
+==================================================
+16. HOMEPAGE
+==================================================
+
+Create a premium landing page.
+
+NAVBAR:
+
+KaamSetu logo
+
+Home
+Services
+How It Works
+Become a Worker
+About
+
+Login
+Get Started
+
+HERO:
+
+"Need a job done?"
+
+"Find the right skilled worker near you."
+
+Supporting text:
+
+"Book trusted electricians, carpenters, plumbers, painters and other skilled professionals at your convenience."
+
+CTA:
+
+[ FIND A WORKER ]
+
+[ BECOME A WORKER ]
+
+Add a large service search bar:
+
+"What do you need help with?"
+
+Category cards:
+
+Electrician
+Plumber
+Carpenter
+Painter
+General Labour
+AC Repair
+Appliance Repair
+Cleaning
+
+==================================================
+17. HOW IT WORKS
+==================================================
+
+Create a visually impressive 4-step section.
+
+01
+
+TELL US WHAT YOU NEED
+
+Upload photos and describe the work.
+
+02
+
+WORKERS REVIEW YOUR REQUEST
+
+Suitable workers inspect your photos and requirements.
+
+03
+
+CHOOSE YOUR TIME
+
+Select a convenient date and time slot.
+
+04
+
+GET THE JOB DONE
+
+Track your worker and complete the service.
+
+==================================================
+18. CUSTOMER DASHBOARD
+==================================================
+
+Dashboard should contain:
+
+Welcome message
+
+Upcoming Booking
+
+Active Booking
+
+Recent Bookings
+
+Saved Addresses
+
+Notifications
+
+Quick Actions
+
+Create New Job
+
+Find a Worker
+
+View Bookings
+
+Use a clean dashboard layout.
+
+==================================================
+19. WORKER DASHBOARD
+==================================================
+
+Dashboard should contain:
+
+Today's Jobs
+
+New Requests
+
+Upcoming Jobs
+
+Active Job
+
+Completed Jobs
+
+Earnings
+
+Rating
+
+Availability
+
+Location Status
+
+Use clear cards and visual statistics.
+
+Example:
+
+NEW REQUESTS
+8
+
+TODAY'S JOBS
+3
+
+COMPLETED
+126
+
+RATING
+4.8 ★
+
+==================================================
+20. ADMIN DASHBOARD
+==================================================
+
+Create a separate protected admin dashboard.
+
+Admin can:
+
+- View users
+- View workers
+- Verify workers
+- Approve worker registrations
+- Reject worker registrations
+- Suspend accounts
+- Manage categories
+- Manage services
+- View bookings
+- View active jobs
+- Monitor active worker locations
+- Manage reviews
+- Handle complaints/reports
+- View platform analytics
+
+Analytics:
+
+Total users
+Total workers
+Active workers
+Total bookings
+Completed jobs
+Cancelled jobs
+Average rating
+Platform revenue
+
+==================================================
+21. WORKER VERIFICATION
+==================================================
+
+Design the architecture so worker verification can be implemented.
+
+Worker profile status:
+
+PENDING
+VERIFIED
+REJECTED
+SUSPENDED
+
+Admin can verify workers.
+
+Show a:
+
+VERIFIED WORKER
+
+badge on verified worker profiles.
+
+Do not claim a worker is verified unless the admin has actually verified the account.
+
+==================================================
+22. SERVICE CATEGORIES
+==================================================
+
+Initial categories:
+
+Electrician
+Plumber
+Carpenter
+Painter
+General Labour
+AC Technician
+Appliance Repair
+RO Technician
+Washing Machine Repair
+Refrigerator Repair
+Cleaning
+Furniture Assembly
+Gardener
+Mason
+
+Create subcategories.
+
+Example:
+
+Electrician:
+
+Fan Installation
+Fan Repair
+Switch Repair
+Socket Repair
+Wiring
+Lighting Installation
+MCB Repair
+
+Admin must be able to add categories and subcategories later.
+
+==================================================
+23. IMAGE UPLOAD SYSTEM
+==================================================
+
+Customers can upload multiple images for their job.
+
+Workers can view these images before accepting.
+
+Implement:
+
+- File type validation
+- File size validation
+- Image preview
+- Remove image
+- Upload progress
+- Secure storage
+
+Worker portfolio should also support images.
+
+Use Supabase Storage or Cloudinary.
+
+==================================================
+24. SEARCH AND FILTER
+==================================================
+
+Customers should be able to search workers.
+
+Filters:
+
+Category
+Service
+Rating
+Distance
+Availability
+Experience
+Verified workers
+
+Sort:
+
+Rating
+Distance
+Experience
+Completed jobs
+
+==================================================
+25. DATABASE
+==================================================
+
+Use PostgreSQL.
+
+Create a proper normalized relational schema.
+
+Tables should include at minimum:
+
+users
+workers
+worker_skills
+categories
+services
+addresses
+bookings
+booking_images
+availability
+worker_locations
+reviews
+notifications
+payments
+reports
+
+Use:
+
+UUIDs
+Foreign keys
+Indexes
+Created timestamps
+Updated timestamps
+
+Use proper relationships.
+
+==================================================
+26. AUTHENTICATION
+==================================================
+
+Use Supabase Auth.
+
+Implement:
+
+Customer signup/login
+Worker signup/login
+Admin login
+Password reset
+Session management
+Logout
+Protected routes
+Role-based authorization
+
+Never store plain text passwords.
+
+==================================================
+27. TECH STACK
+==================================================
+
+Frontend:
+
+Next.js
+TypeScript
+Tailwind CSS
+shadcn/ui
+
+Backend:
+
+FastAPI
+Python
+
+Database:
+
+PostgreSQL / Supabase
+
+Authentication:
+
+Supabase Auth
+
+Storage:
+
+Supabase Storage
+
+Realtime:
+
+Supabase Realtime or WebSockets
+
+Maps:
+
+Google Maps Platform or Mapbox
+
+Use environment variables.
+
+Create:
+
+.env.example
+
+==================================================
+28. API ARCHITECTURE
+==================================================
+
+Create REST APIs for:
+
+Users
+Workers
+Categories
+Services
+Bookings
+Booking images
+Availability
+Reviews
+Notifications
+Worker locations
+Admin
+
+Use:
+
+GET
+POST
+PUT/PATCH
+DELETE
+
+with correct HTTP status codes.
+
+Implement server-side validation.
+
+==================================================
+29. SECURITY
+==================================================
+
+Implement:
+
+Role-based access control
+Protected routes
+Server-side authorization
+Input validation
+File validation
+Rate limiting where appropriate
+Secure sessions
+Environment variables
+No exposed secrets
+
+A customer must never be able to access another customer's private information.
+
+A worker must only access job requests they are authorized to see.
+
+Admin routes must be completely protected.
+
+==================================================
+30. RESPONSIVE DESIGN
+==================================================
+
+The website must work beautifully on:
+
+Desktop
+Laptop
+Tablet
+Mobile
+
+Mobile UX is extremely important.
+
+The worker may primarily use a mobile phone.
+
+Therefore:
+
+Worker dashboard
+Job requests
+Accept/reject
+Location sharing
+Booking status
+
+must work extremely well on mobile.
+
+==================================================
+31. UI DETAILS
+==================================================
+
+Use:
+
+Large clear typography
+Generous spacing
+Rounded cards
+Subtle shadows
+Clean borders
+Professional icons
+Smooth but minimal animations
+Skeleton loaders
+Loading states
+Empty states
+Error states
+Success states
+Toast notifications
+
+Avoid:
+
+Excessive animations
+Huge gradients
+Neon colors
+Clutter
+Unnecessary glassmorphism
+Random colors
+Generic templates
+
+The teal palette must remain visually dominant.
+
+==================================================
+32. IMAGES
+==================================================
+
+Use realistic images of skilled workers.
+
+Examples:
+
+Professional electrician repairing a home appliance
+Carpenter working on furniture
+Plumber repairing a sink
+Painter working inside a house
+General labour worker
+AC technician servicing an AC
+
+Images should look authentic and professional.
+
+Do not use cartoon illustrations unless they are part of a deliberate UI illustration system.
+
+Do not use unrelated stock photography.
+
+==================================================
+33. IMPORTANT USER EXPERIENCE
+==================================================
+
+A customer should be able to create a job request in under 2–3 minutes.
+
+A worker should be able to understand a job request within 10–15 seconds.
+
+The worker request card must prioritize:
+
+WHAT
+WHERE
+WHEN
+PHOTOS
+DESCRIPTION
+
+Then:
+
+ACCEPT / REJECT
+
+==================================================
+34. MVP DEVELOPMENT PRIORITY
+==================================================
+
+DO NOT try to build every advanced feature at once.
+
+Build in this exact order:
+
+PHASE 1:
+
+Project setup
+Design system
+Navbar
+Homepage
+Authentication
+Database
+
+PHASE 2:
+
+Customer profile
+Worker profile
+Categories
+Services
+Worker search
+
+PHASE 3:
+
+Job request creation
+Image uploads
+Description
+Location
+Date
+Time slots
+
+PHASE 4:
+
+Worker job request dashboard
+View customer photos
+View description
+Accept/reject
+
+PHASE 5:
+
+Booking management
+Booking status
+Customer dashboard
+Worker dashboard
+
+PHASE 6:
+
+Ratings and reviews
+
+PHASE 7:
+
+Location tracking
+
+PHASE 8:
+
+Admin dashboard
+Worker verification
+Reports
+
+PHASE 9:
+
+Notifications
+Realtime updates
+
+PHASE 10:
+
+Payments and advanced features
+
+==================================================
+35. PAYMENT ARCHITECTURE
+==================================================
+
+Do NOT make payment the first feature.
+
+However, design the database so payments can be added later.
+
+Create a payments table/schema abstraction.
+
+Later we should be able to integrate:
+
+Razorpay
+
+or another Indian payment gateway.
+
+For MVP development, use a mock payment state.
+
+==================================================
+36. NOTIFICATIONS
+==================================================
+
+Create notification architecture for:
+
+New job request
+Worker accepted
+Worker rejected
+Booking confirmed
+Worker on the way
+Worker arrived
+Work started
+Work completed
+Booking cancelled
+New review
+
+Implement UI notification components.
+
+Realtime notifications can be added through Supabase Realtime.
+
+==================================================
+37. DEMO DATA
+==================================================
+
+Seed the database with realistic demo data.
+
+Create:
+
+10+ workers
+20+ services
+Multiple categories
+Sample customers
+Sample bookings
+Sample reviews
+
+Example worker:
+
+Rajesh Kumar
+Electrician
+4.8 rating
+126 jobs
+8 years experience
+Lucknow
+
+==================================================
+38. DEVELOPMENT FALLBACKS
+==================================================
+
+External APIs may not be available during initial development.
+
+Therefore:
+
+Maps should support mock mode.
+
+Realtime location should support simulated location updates.
+
+Image storage should have a development fallback.
+
+Payments should have mock mode.
+
+But structure the code so real APIs can be plugged in later without rewriting the application.
+
+==================================================
+39. CODE QUALITY
+==================================================
+
+Write clean, maintainable code.
+
+Avoid:
+
+Huge components
+Duplicate logic
+Hard-coded data
+Hard-coded API keys
+Poor naming
+Unnecessary dependencies
+
+Use reusable components.
+
+Use TypeScript types.
+
+Use proper error handling.
+
+Add comments only where useful.
+
+==================================================
+40. PROJECT STRUCTURE
+==================================================
+
+Create a scalable structure separating:
+
+Frontend
+Backend
+Components
+API
+Database
+Authentication
+Services
+Hooks
+Types
+Utilities
+Middleware
+
+Keep the architecture clean enough that more developers can join the project later.
+
+==================================================
+41. README
+==================================================
+
+Create a complete README explaining:
+
+Project overview
+Features
+Technology stack
+Folder structure
+Environment variables
+Supabase setup
+Database setup
+Local development
+Running frontend
+Running backend
+Seed data
+Mock mode
+Maps configuration
+Production deployment
+
+==================================================
+42. FINAL PRODUCT STANDARD
+==================================================
+
+The final website should feel like:
+
+A REAL STARTUP MVP.
+
+It should NOT feel like:
+
+"A generated AI demo website."
+
+Prioritize:
+
+FUNCTIONALITY
++
+GOOD UX
++
+CLEAN ARCHITECTURE
++
+CONSISTENT BRANDING
++
+RESPONSIVE DESIGN
+
+The core journey must actually work:
+
+CUSTOMER
+→ CREATE JOB
+→ UPLOAD PHOTOS
+→ DESCRIBE WORK
+→ SELECT DATE/TIME
+→ SUBMIT REQUEST
+→ WORKER RECEIVES REQUEST
+→ WORKER VIEWS PHOTOS
+→ ACCEPTS
+→ BOOKING CONFIRMED
+→ WORKER STARTS JOURNEY
+→ CUSTOMER TRACKS WORKER
+→ WORKER ARRIVES
+→ WORK STARTED
+→ WORK COMPLETED
+→ CUSTOMER RATES WORKER
+
+==================================================
+43. HOW YOU SHOULD WORK
+==================================================
+
+Do NOT dump the entire project into one giant response.
+
+Work incrementally.
+
+FIRST:
+
+Explain:
+
+1. Overall architecture
+2. Technology stack
+3. Database schema
+4. Folder structure
+5. Authentication architecture
+6. Booking workflow
+7. Location tracking architecture
+8. Design system
+
+Then begin implementation.
+
+After each major phase, verify that the previous functionality is logically complete before moving forward.
+
+If something requires an external API key, clearly explain where the key belongs and provide a mock/development fallback.
+
+Do not remove functionality simply because an external API is unavailable.
+
+Build KaamSetu as a scalable foundation that can later become a real production platform.
