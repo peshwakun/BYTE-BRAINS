@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KaamSetu — Skilled hands. Trusted service. Right at your doorstep.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="banner">Frontend preview — static demo for design review. No account data is saved here.</div>
+
+<header>
+  <nav>
+    <div class="logo">Kaam<span>Setu</span></div>
+    <div class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#categories">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#worker">Become a Worker</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="navright">
+      <a href="#">Login</a>
+      <button class="btn-get-started" id="getStartedBtn">Get Started</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Need a job done?</h1>
+  <div class="sub">Find the right skilled worker near you.</div>
+  <p>Book trusted electricians, carpenters, plumbers, painters and other skilled professionals at your convenience.</p>
+  <div class="searchbar">
+    <input type="text" placeholder="What do you need help with?">
+    <button id="heroSearchBtn">Search</button>
+  </div>
+  <div class="hero-ctas">
+    <button class="cta-primary" id="findWorkerBtn">Find a Worker</button>
+    <button class="cta-ghost" id="becomeWorkerBtn">Become a Worker</button>
+  </div>
+</section>
+
+<section class="block" id="categories">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What do you need done?</h2>
+      <p>Every worker reviews your job photos and description before accepting — you always know who's coming.</p>
+    </div>
+    <div class="cat-grid" id="catGrid">
+      <div class="cat-card" data-cat="Electrician"><div class="cat-icon">⚡</div><div class="cat-name">Electrician</div></div>
+      <div class="cat-card" data-cat="Plumber"><div class="cat-icon">🔧</div><div class="cat-name">Plumber</div></div>
+      <div class="cat-card" data-cat="Carpenter"><div class="cat-icon">🪚</div><div class="cat-name">Carpenter</div></div>
+      <div class="cat-card" data-cat="Painter"><div class="cat-icon">🖌️</div><div class="cat-name">Painter</div></div>
+      <div class="cat-card" data-cat="General Labour"><div class="cat-icon">🧱</div><div class="cat-name">General Labour</div></div>
+      <div class="cat-card" data-cat="AC Technician"><div class="cat-icon">❄️</div><div class="cat-name">AC Technician</div></div>
+      <div class="cat-card" data-cat="Appliance Repair"><div class="cat-icon">🛠️</div><div class="cat-name">Appliance Repair</div></div>
+      <div class="cat-card" data-cat="Cleaning"><div class="cat-icon">🧹</div><div class="cat-name">Cleaning</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block how" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>How KaamSetu works</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Tell us what you need</h3><p>Upload photos and describe the work.</p></div>
+      <div class="step"><div class="num">02</div><h3>Workers review your request</h3><p>Suitable workers inspect your photos and requirements.</p></div>
+      <div class="step"><div class="num">03</div><h3>Choose your time</h3><p>Select a convenient date and time slot.</p></div>
+      <div class="step"><div class="num">04</div><h3>Get the job done</h3><p>Track your worker and complete the service.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="job">
+  <div class="wrap demo">
+    <div class="demo-copy">
+      <h2 style="font-size:clamp(26px,3.5vw,34px);">Post a job in under 2 minutes</h2>
+      <p>This is the core flow: describe the work, add photos, pick a slot — nearby workers see this exact card before deciding to accept.</p>
+    </div>
+    <div class="job-form">
+      <div class="form-row">
+        <label>Category</label>
+        <select id="jobCat">
+          <option>Electrician</option><option>Plumber</option><option>Carpenter</option>
+          <option>Painter</option><option>General Labour</option><option>AC Technician</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>Describe the work</label>
+        <textarea id="jobDesc" placeholder="e.g. My ceiling fan suddenly stopped working. The switch works but the fan doesn't rotate."></textarea>
+      </div>
+      <div class="form-row">
+        <label>Photos</label>
+        <div class="upload-box" id="uploadBox">Tap to add photos of the job (demo — adds sample thumbnails)</div>
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+      <div class="form-row">
+        <label>Preferred time slot</label>
+        <div class="slot-grid" id="slotGrid">
+          <div class="slot" data-slot="9–10 AM">09:00 – 10:00 AM</div>
+          <div class="slot" data-slot="2–3 PM">02:00 – 03:00 PM</div>
+          <div class="slot" data-slot="4–5 PM">04:00 – 05:00 PM</div>
+          <div class="slot" data-slot="5–6 PM">05:00 – 06:00 PM</div>
+        </div>
+      </div>
+      <button id="submitJobBtn">Submit job request</button>
+      <div class="status-track" id="statusTrack">
+        <div class="status-step done"><span class="dot"></span> Requested</div>
+        <div class="status-step" id="s2"><span class="dot"></span> Worker viewed your request</div>
+        <div class="status-step" id="s3"><span class="dot"></span> Accepted by worker</div>
+        <div class="status-step" id="s4"><span class="dot"></span> Confirmed — booking locked in</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="workerprofile">
+  <div class="wrap">
+    <div class="section-head"><h2>What a worker profile looks like</h2></div>
+    <div class="worker-card">
+      <div class="avatar">👷</div>
+      <div>
+        <div class="wname">Rajesh Kumar <span class="badge">VERIFIED</span></div>
+        <div class="wtrade">Electrician</div>
+        <div class="wmeta">
+          <span>★ 4.8 · 126 reviews</span>
+          <span>312 jobs completed</span>
+          <span>8 years experience</span>
+          <span>Lucknow</span>
+        </div>
+        <div class="skills">
+          <span class="skill-pill">Fan Installation</span>
+          <span class="skill-pill">Wiring</span>
+          <span class="skill-pill">Switch Repair</span>
+          <span class="skill-pill">MCB Repair</span>
+        </div>
+        <button class="req-service-btn" id="requestServiceBtn">Request Service</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="worker" style="background:#F1F8F6;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Skilled at a trade? Get booked on KaamSetu.</h2>
+      <p>Register your skills and service area — job requests from nearby customers come straight to you, photos and all, so you know exactly what you're saying yes to.</p>
+    </div>
+    <button class="cta-primary" style="background:var(--teal);">Register as a Worker</button>
+  </div>
+</section>
+
+<footer id="about">
+  <div class="foot-row">
+    <div class="logo" style="color:#fff;">Kaam<span>Setu</span></div>
+    <a href="#categories">Services</a>
+    <a href="#how">How It Works</a>
+    <a href="#worker">Become a Worker</a>
+    <a href="#about">About</a>
+    <span>© 2026 KaamSetu</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
